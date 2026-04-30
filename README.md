@@ -32,56 +32,54 @@ To automate major modules of OrangeHRM and demonstrate real-world test automatio
 
 ---
 
-# 📂 Project Structure
+## 📁 Project Structure
 
+```text
 QualityHR-Automation/
-│── src/
+├── src/
 │   ├── main/
 │   │   ├── java/
-│   │   │   └── com/qualityhr/
-│   │   │       ├── base/
-│   │   │       │   └── BasePage.java
-│   │   │       │
-│   │   │       ├── driver/
-│   │   │       │   └── DriverFactory.java
-│   │   │       │
-│   │   │       ├── pages/
-│   │   │       │   ├── AdminPage.java
-│   │   │       │   ├── EmployeePage.java
-│   │   │       │   ├── LeavePage.java
-│   │   │       │   └── LoginPage.java
-│   │   │       │
-│   │   │       └── utils/
-│   │   │           ├── ConfigReader.java
-│   │   │           ├── ExtentReportManager.java
-│   │   │           ├── ScreenshotUtil.java
-│   │   │           └── WaitHelper.java
-│   │   │
+│   │   │   └── com/
+│   │   │       └── qualityhr/
+│   │   │           ├── base/
+│   │   │           │   └── BasePage.java
+│   │   │           ├── driver/
+│   │   │           │   └── DriverFactory.java
+│   │   │           ├── pages/
+│   │   │           │   ├── AdminPage.java
+│   │   │           │   ├── EmployeePage.java
+│   │   │           │   ├── LeavePage.java
+│   │   │           │   └── LoginPage.java
+│   │   │           └── utils/
+│   │   │               ├── ConfigReader.java
+│   │   │               ├── ExtentReportManager.java
+│   │   │               ├── ScreenshotUtil.java
+│   │   │               └── WaitHelper.java
 │   │   └── resources/
 │   │       ├── config.properties
 │   │       ├── testdata.xlsx
 │   │       └── testdata.xlsx.tmp
 │   │
-│   ├── test/
-│   │   ├── java/
-│   │   │   └── com/qualityhr/
-│   │   │       ├── listeners/
-│   │   │       │   └── TestListener.java
-│   │   │       │
-│   │   │       └── tests/
-│   │   │           ├── BaseTest.java
-│   │   │           ├── LoginTest.java
-│   │   │           ├── AdminTest.java
-│   │   │           ├── EmployeeTest.java
-│   │   │           └── LeaveTest.java
-│   │   │
-│   │   └── resources/
+│   └── test/
+│       ├── java/
+│       │   └── com/
+│       │       └── qualityhr/
+│       │           ├── listeners/
+│       │           │   └── TestListener.java
+│       │           └── tests/
+│       │               ├── BaseTest.java
+│       │               ├── LoginTest.java
+│       │               ├── AdminTest.java
+│       │               ├── EmployeeTest.java
+│       │               └── LeaveTest.java
+│       └── resources/
 │
-│── reports/
-│── screenshots/
-│── pom.xml
-│── testng.xml
+├── reports/
+├── screenshots/
+├── pom.xml
+├── testng.xml
 └── README.md
+
 ---
 
 # ⚙️ Configuration
