@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [QualityHR Automation Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="com.qualityhr.listeners.TestListener"/>
+  </listeners>
+  <test thread-count="5" name="Functional Scenarios(failed)">
+    <classes>
+      <class name="com.qualityhr.tests.LeaveTest">
+        <methods>
+          <include name="testCompleteLeaveApplicationFlow"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.qualityhr.tests.LeaveTest -->
+    </classes>
+  </test> <!-- Functional Scenarios(failed) -->
+</suite> <!-- Failed suite [QualityHR Automation Suite] -->
